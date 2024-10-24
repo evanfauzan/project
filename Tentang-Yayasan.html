@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <style>
+      .selector-for-some-widget {
+        box-sizing: content-box;
+      }
+      .hero-section {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 50px 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hover-effect {
+        transition: transform 0.3s;
+      }
+      .hover-effect:hover {
+        transform: scale(1.01);
+      }
+      .card {
+        height: 100%; /* Make cards equal height */
+      }
+      .card img {
+        height: 200px; /* Set a fixed height for images */
+        object-fit: cover; /* Maintain aspect ratio */
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Space out the content */
+      }
+    </style>
+    <title>Yayasan Darul Qur'an - Tentang Yayasan</title>
+  </head>
+
+  <body style="background-image: url(background.png)">
+    <nav class="navbar bg-success bg-gradient fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3 text-white" href="">
+          <img
+            src="logo.png"
+            alt="Logo Yayasan Darul Qur'an"
+            class="d-inline-block align-text-top"
+            style="max-width: 45px; height: auto"
+          />
+          Yayasan Pesantren Darul Qur'an
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header bg-light bg-gradient">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body bg-light bg-gradient">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="aboutDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Tentang Kami</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <li>
+                    <a class="dropdown-item" href="Tentang-Yayasan.html"
+                      >Tentang Yayasan</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sejarah</a></li>
+                  <li><a class="dropdown-item" href="#">Pendiri Yayasan</a></li>
+                  <li><a class="dropdown-item" href="#">Visi & Misi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Program Pendidikan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pendaftaran</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kegiatan</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="galleryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Galeri</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Pondok Pesantren</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Madrasah Ibtidaiyah</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Madrasah Tsanawiyah</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Madrasah Aliyah</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br /><br />
+    <div class="container-lg mt-5 bg-success-subtle bg-gradient rounded shadow">
+      <h1 class="text-center pt-3">Pondok Pesantren Darul Quran</h1>
+
+      <div class="mt-4 p-3 container-fluid">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="bg-light bg-gradient rounded border p-3 h-100">
+              <h2>Profil Pondok Pesantren</h2>
+              <p>
+                Pondok Pesantren Darul Quran adalah lembaga pendidikan Islam
+                yang terletak di Desa Sumber Hidup, Dusun 2, Kecamatan Pedamaran
+                Timur, Kabupaten Ogan Ilir (OKI), Provinsi Sumatera Selatan.
+                Didirikan di atas tanah yang dulunya merupakan proyek UPT
+                Transmigrasi Pematang Panggang 5 SP 1 pada tahun 1983, pondok
+                ini memiliki sejarah panjang dan nilai budaya yang kaya,
+                mencerminkan tradisi dan kearifan lokal yang diintegrasikan
+                dengan ajaran Islam.
+              </p>
+              <p>
+                Dengan lokasi yang strategis dan dikelilingi oleh alam yang
+                subur, Pondok Pesantren Darul Quran menawarkan suasana tenang
+                yang ideal untuk belajar dan beribadah. Lingkungan yang asri dan
+                damai memberikan kesempatan bagi santri untuk fokus pada studi
+                keagamaan dan pengembangan pribadi mereka.
+              </p>
+              <p>
+                Sebagai sekolah umum Islam yang berlandaskan pada nilai-nilai
+                Nahdlatul Ulama (NU), Pondok Pesantren ini memberikan
+                fleksibilitas bagi siswa untuk memilih antara menetap di pondok
+                (mondok) atau pulang pergi. Santri didorong untuk memahami dan
+                mengamalkan ajaran Islam dengan cara yang relevan dalam konteks
+                sosial dan budaya mereka.
+              </p>
+              <p>
+                Pondok Pesantren Darul Quran mengutamakan pengajaran yang tidak
+                hanya berfokus pada aspek akademis, tetapi juga pada pembentukan
+                karakter dan akhlak santri. Melalui berbagai program, santri
+                diajarkan untuk menghargai nilai-nilai tradisional dan modern,
+                serta untuk berkontribusi secara positif kepada masyarakat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="bg-light bg-gradient rounded border p-3 h-100">
+              <h2>Keunggulan Pondok</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <strong>Program pendidikan yang komprehensif:</strong>
+                  Mengintegrasikan pembelajaran Al-Quran, fiqh, akidah, serta
+                  ilmu pengetahuan umum.
+                </li>
+                <li>
+                  <strong>Fasilitas yang memadai:</strong> Ruang kelas dan
+                  tempat ibadah yang kondusif untuk proses belajar.
+                </li>
+                <li>
+                  <strong>Pengajar berpengalaman:</strong> Komitmen tinggi
+                  terhadap pengembangan santri.
+                </li>
+                <li>
+                  <strong>Kegiatan ekstrakurikuler yang beragam:</strong>
+                  Termasuk olahraga, seni, dan sosial.
+                </li>
+                <li>
+                  <strong>LAB Komputer:</strong> Dilengkapi perangkat dan
+                  jaringan internet untuk akses sumber belajar tambahan.
+                </li>
+                <li>
+                  <strong>Program pengembangan diri:</strong> Pelatihan
+                  kepemimpinan dan bimbingan karier.
+                </li>
+                <li>
+                  <strong>Kemitraan dengan lembaga lain:</strong> Meningkatkan
+                  kualitas pendidikan dan peluang kolaborasi.
+                </li>
+                <li>
+                  <strong>Lingkungan belajar yang mendukung:</strong>
+                  Memprioritaskan nilai-nilai keagamaan dan sosial.
+                </li>
+                <li>
+                  <strong>Kegiatan masyarakat:</strong> Memperluas wawasan dan
+                  pengalaman santri.
+                </li>
+                <li>
+                  <strong>Komunikasi yang baik:</strong> Antara pengajar,
+                  santri, dan orang tua dalam proses pendidikan.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <!-- Footer -->
+    <footer class="footer bg-success bg-gradient text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-info">
+            <h3 class="footer-title">
+              <i class="bi bi-info-circle me-2" style="font-size: 1.5rem"></i>
+              Tentang Kami
+            </h3>
+            <p class="footer-description">
+              Yayasan Darul Qur'an berkomitmen untuk menyediakan pendidikan
+              berkualitas dengan pendekatan yang mendalam terhadap ajaran
+              Al-Qur'an. Bergabunglah bersama kami untuk membangun masa depan
+              yang cerah.
+            </p>
+          </div>
+          <div class="col-md-4 footer-contact">
+            <h3 class="footer-title">
+              <i class="bi bi-envelope-fill me-2" style="font-size: 1.5rem"></i>
+              Kontak Kami
+            </h3>
+            <p class="footer-text">
+              <strong>Email:</strong>
+              <a href="mailto:darulquranoki@gmail.com" class="text-white"
+                >darulquranoki@gmail.com</a
+              >
+            </p>
+            <p class="footer-text">
+              <strong>Telepon:</strong> +62 813-2512-3377
+            </p>
+            <p class="footer-text">
+              <strong>Alamat:</strong> Blok B, Sumber Hidup, Kec. Pedamaran
+              Tim., Kabupaten Ogan Komering Ilir, Sumatera Selatan 30672
+            </p>
+          </div>
+          <div class="col-md-4 footer-social">
+            <h3 class="footer-title">
+              <i class="bi bi-share me-2" style="font-size: 1.5rem"></i>
+              Ikuti Kami
+            </h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/mts.daarunnajaa?mibextid=ZbWKwL"
+                target="_blank"
+              >
+                <img src="facebook.png" alt="Facebook" class="social-icon" />
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram" class="social-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-rights text-center mt-4">
+          &copy; 2024 Yayasan Darul Qur'an. Semua Hak Dilindungi.
+        </p>
+      </div>
+    </footer>
+
+    <style>
+      .footer {
+        background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+      }
+
+      .footer-title {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-description,
+      .footer-text {
+        font-size: 0.9rem;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 10px;
+      }
+
+      .social-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .footer-title i {
+        color: #fff; /* Ensure icons are white for contrast */
+      }
+    </style>
+
+    <!-- Include Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  </body>
+</html>
