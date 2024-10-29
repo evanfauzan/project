@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
+    />
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <style>
+      .selector-for-some-widget {
+        box-sizing: content-box;
+      }
+      .card-img-top {
+        width: 100px; /* Ukuran gambar logo lebih kecil */
+        height: auto; /* Menjaga proporsi */
+        margin: 0 auto; /* Mengatur gambar agar berada di tengah */
+      }
+      .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada kartu */
+      }
+      .card:hover {
+        transform: scale(1.02);
+      }
+      .img-responsive {
+        max-width: 100%;
+        height: auto; /* Menjaga proporsi gambar */
+      }
+      .card-header {
+        background-color: #f8f9fa; /* Warna latar belakang untuk header */
+      }
+      .btn-link {
+        text-decoration: none; /* Menghilangkan garis bawah */
+        color: #007bff; /* Warna teks tombol */
+      }
+      .btn-link:hover {
+        color: #0056b3; /* Warna teks tombol saat hover */
+      }
+      .animated-button {
+        transition: transform 0.2s; /* Transisi untuk efek animasi */
+      }
+      .animated-button:active {
+        transform: scale(0.95); /* Efek mengecil saat tombol ditekan */
+      }
+    </style>
+    <title>Yayasan Darul Qur'an - Pendaftaran</title>
+  </head>
+
+  <body style="background-image: url(background.png)">
+    <nav class="navbar bg-success bg-gradient text-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3 text-white" href="">
+          <img
+            src="logo.png"
+            alt="Logo Yayasan Darul Qur'an"
+            class="d-inline-block align-text-top"
+            style="max-width: 45px; height: auto"
+          />
+          Yayasan Pesantren Darul Qur'an
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header bg-light bg-gradient">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body bg-light bg-gradient">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="aboutDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Tentang Kami</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <li>
+                    <a class="dropdown-item" href="Tentang-Yayasan.html"
+                      >Tentang Yayasan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Sejarah.html">Sejarah</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Pendiri Yayasan</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Visi-dan-Misi.html"
+                      >Visi & Misi</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Program Pendidikan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pendaftaran.html">Pendaftaran</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kegiatan</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="galleryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Galeri</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Pondok Pesantren</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Madrasah Ibtidaiyah</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Madrasah Tsanawiyah</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Madrasah Aliyah</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Berita.html">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br />
+    <!-- content -->
+    <img src="ppdb.jpg" class="img-fluid" alt="PPDB" />
+    <div class="container-fluid bg-light bg-gradient">
+      <h1 class="text-center p-3" data-aos="fade-up">
+        Tentang Yayasan Pesantren Darul Quran
+      </h1>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <p data-aos="fade-up" data-aos-delay="100">
+            Yayasan Pesantren Darul Quran adalah sekolah Islam umum yang
+            memberikan fleksibilitas bagi santrinya. Santri memiliki pilihan
+            untuk menetap (mondok) di pesantren atau pulang pergi setiap hari.
+            Dengan sistem pendidikan yang mendukung, kami memastikan setiap
+            santri dapat belajar dengan nyaman sesuai dengan kebutuhan mereka.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="mt-5 text-center" data-aos="fade-up">Program Pendidikan</h2>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card text-center">
+            <img src="logo/tk.png" class="card-img-top" alt="Logo TK" />
+            <div class="card-body">
+              <h5 class="card-title">TK (Taman Kanak-Kanak)</h5>
+              <p class="card-text">
+                Program pendidikan dasar untuk anak usia dini, menanamkan
+                nilai-nilai Islam sejak usia muda.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card text-center">
+            <img src="logo/mi.png" class="card-img-top" alt="Logo MI" />
+            <div class="card-body">
+              <h5 class="card-title">MI (Madrasah Ibtidaiyah)</h5>
+              <p class="card-text">
+                Pendidikan dasar Islam yang mengintegrasikan ilmu umum dan ilmu
+                agama.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card text-center">
+            <img src="logo/mts.png" class="card-img-top" alt="Logo MTS" />
+            <div class="card-body">
+              <h5 class="card-title">MTS (Madrasah Tsanawiyah)</h5>
+              <p class="card-text">
+                Pendidikan menengah pertama yang fokus pada penguatan ilmu agama
+                dan pengetahuan umum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="card text-center">
+            <img src="logo/ma.png" class="card-img-top" alt="Logo MA" />
+            <div class="card-body">
+              <h5 class="card-title">MA (Madrasah Aliyah)</h5>
+              <p class="card-text">
+                Pendidikan menengah atas yang mempersiapkan santri untuk
+                melanjutkan ke pendidikan tinggi dengan landasan agama yang
+                kuat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <div class="container-fluid bg-primary-subtle bg-gradient p-4">
+      <div class="row">
+        <!-- Konten Kiri -->
+        <div class="col-md-6" data-aos="fade-up">
+          <h1>Kenapa Memilih <b>Yayasan Darul Quran?</b></h1>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Kualitas Pendidikan
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse show"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Yayasan Darul Quran menawarkan kurikulum yang terpadu antara
+                  pendidikan umum dan agama. Kami memiliki pengajar berkualitas
+                  yang berkomitmen untuk memberikan pendidikan terbaik, sehingga
+                  santri kami siap menghadapi tantangan masa depan.
+                  <ul>
+                    <li>Pengajaran interaktif dan inovatif.</li>
+                    <li>Fokus pada pengembangan karakter.</li>
+                    <li>
+                      Program ekstra kurikuler yang mendukung pembelajaran.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Lingkungan yang Mendukung
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Kami menyediakan lingkungan yang kondusif untuk belajar,
+                  didukung oleh fasilitas yang memadai dan tenaga pengajar yang
+                  peduli. Dengan suasana yang positif, santri dapat belajar
+                  dengan nyaman.
+                  <ul>
+                    <li>Ruang kelas yang nyaman dan bersih.</li>
+                    <li>Perpustakaan dengan koleksi buku yang lengkap.</li>
+                    <li>Area bermain dan kegiatan luar ruangan.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Fasilitas Lengkap
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Fasilitas yang kami sediakan meliputi ruang kelas yang nyaman,
+                  perpustakaan, area kegiatan luar ruangan, dan ruang serbaguna
+                  untuk berbagai acara. Kami berusaha untuk menciptakan
+                  pengalaman belajar yang menyeluruh.
+                  <ul>
+                    <li>Laboratorium sains dan komputer.</li>
+                    <li>Ruang olahraga dan kegiatan seni.</li>
+                    <li>Kantin dengan menu sehat.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Konten Kanan -->
+        <div
+          class="col-md-6 text-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            src="side1.png"
+            class="img-responsive"
+            alt="Gambar Yayasan Darul Quran"
+            style="max-width: 563px; width: 100%"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Langkah Pendaftaran -->
+    <div class="container-fluid bg-light bg-gradient py-5">
+      <div class="container">
+        <h2 class="text-center" data-aos="fade-up">Langkah Pendaftaran</h2>
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6">
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action">
+                <i class="fas fa-pencil-alt"></i>
+                <strong>1. Isi Formulir Pendaftaran</strong>
+                <p class="mb-1">
+                  Klik tombol di bawah untuk mengakses formulir pendaftaran.
+                </p>
+              </a>
+              <a class="list-group-item list-group-item-action">
+                <i class="fas fa-file-alt"></i>
+                <strong>2. Siapkan Dokumen yang Diperlukan</strong>
+                <p class="mb-1">
+                  Dokumen seperti akta kelahiran dan pas foto diperlukan untuk
+                  pendaftaran.
+                </p>
+              </a>
+              <a class="list-group-item list-group-item-action">
+                <i class="fas fa-check-circle"></i>
+                <strong>3. Tunggu Konfirmasi dari Pihak Yayasan</strong>
+                <p class="mb-1">
+                  Kami akan menghubungi Anda untuk mengonfirmasi pendaftaran.
+                </p>
+              </a>
+              <a class="list-group-item list-group-item-action">
+                <i class="fas fa-user-graduate"></i>
+                <strong>4. Bergabung dengan Yayasan Darul Quran!</strong>
+                <p class="mb-1">
+                  Selamat! Anda siap memulai perjalanan pendidikan.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-md-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <br>
+            <p>Anda bisa mendaftar di sini</p>
+            <div class="arrow" data-aos="fade-up" data-aos-delay="300"></div>
+              <i class="fas fa-arrow-down"></i>
+              
+            </div>
+            <a
+              href="https://forms.gle/UefiRJ69poQmJVHs5"
+              class="btn btn-primary btn-lg animated-button mt-3"
+              target="_blank"
+            >
+              <i class="fas fa-paper-plane"></i> Daftar Sekarang
+            </a>
+
+          </div>
+        </div>
+
+        <h5 class="mt-4" data-aos="fade-up" data-aos-delay="300">
+          Syarat Pendaftaran:
+        </h5>
+        <ul data-aos="fade-up" data-aos-delay="400">
+          <li>Usia minimal 4 tahun untuk TK.</li>
+          <li>Membawa fotokopi akta kelahiran.</li>
+          <li>Melampirkan pas foto terbaru.</li>
+          <li>Melakukan wawancara dengan pengurus yayasan.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer bg-success bg-gradient text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-info">
+            <h3 class="footer-title">
+              <i class="bi bi-info-circle me-2" style="font-size: 1.5rem"></i>
+              Tentang Kami
+            </h3>
+            <p class="footer-description">
+              Yayasan Darul Qur'an berkomitmen untuk menyediakan pendidikan
+              berkualitas dengan pendekatan yang mendalam terhadap ajaran
+              Al-Qur'an. Bergabunglah bersama kami untuk membangun masa depan
+              yang cerah.
+            </p>
+          </div>
+          <div class="col-md-4 footer-contact">
+            <h3 class="footer-title">
+              <i class="bi bi-envelope-fill me-2" style="font-size: 1.5rem"></i>
+              Kontak Kami
+            </h3>
+            <p class="footer-text">
+              <strong>Email:</strong>
+              <a href="mailto:darulquranoki@gmail.com" class="text-white"
+                >darulquranoki@gmail.com</a
+              >
+            </p>
+            <p class="footer-text">
+              <strong>Telepon:</strong> +62 813-2512-3377
+            </p>
+            <p class="footer-text">
+              <strong>Alamat:</strong> Blok B, Sumber Hidup, Kec. Pedamaran
+              Tim., Kabupaten Ogan Komering Ilir, Sumatera Selatan 30672
+            </p>
+          </div>
+          <div class="col-md-4 footer-social">
+            <h3 class="footer-title">
+              <i class="bi bi-share me-2" style="font-size: 1.5rem"></i>
+              Ikuti Kami
+            </h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/mts.daarunnajaa?mibextid=ZbWKwL"
+                target="_blank"
+              >
+                <img src="facebook.png" alt="Facebook" class="social-icon" />
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram" class="social-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-rights text-center mt-4">
+          &copy; 2024 Yayasan Darul Qur'an. Semua Hak Dilindungi.
+        </p>
+      </div>
+    </footer>
+
+    <style>
+      .footer {
+        background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+      }
+
+      .footer-title {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-description,
+      .footer-text {
+        font-size: 0.9rem;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 10px;
+      }
+
+      .social-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .footer-title i {
+        color: #fff; /* Ensure icons are white for contrast */
+      }
+    </style>
+
+    <!-- Include Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+      AOS.init(); // Inisialisasi AOS
+    </script>
+  </body>
+</html>

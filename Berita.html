@@ -9,8 +9,23 @@
       .selector-for-some-widget {
         box-sizing: content-box;
       }
+      .card {
+        height: 100%; /* Make cards equal height */
+      }
+      .card:hover {
+        transform: scale(1.02);
+      }
+      .card img {
+        height: 200px; /* Set a fixed height for images */
+        object-fit: cover; /* Maintain aspect ratio */
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Space out the content */
+      }
     </style>
-    <title>Yayasan Darul Qur'an - Visi & Misi</title>
+    <title>Yayasan Darul Qur'an - Berita</title>
   </head>
 
   <body style="background-image: url(background.png)">
@@ -129,78 +144,93 @@
     </nav>
     <br /><br />
     <!-- content -->
-    <div class="container-lg mt-5 bg-light rounded shadow">
-      <h1 class="text-center pt-4">
-        Visi dan Misi Pondok Pesantren Darul Quran
-      </h1>
-
-      <div class="row mt-4">
-        <div class="col-md-6 mb-4">
-          <div
-            class="card bg-success-subtle bg-gradient d-flex flex-column h-100"
-          >
+    <div class="container my-5 bg-light bg-gradient shadow">
+      <h2 class="text-center mb-4 pt-3">Berita Terbaru</h2>
+      <div class="row p-2">
+        <div class="col-md-4 mb-4">
+          <div class="card hover-effect fade-in">
+            <img
+              src="berita/pengurus.jpg"
+              class="card-img-top"
+              alt="Pelantikan Pengurus"
+            />
             <div class="card-body">
-              <h2 class="card-title text-center">
-                <i class="bi bi-eye" style="font-size: 2rem"></i>
-                Visi
-              </h2>
-              <p class="card-text text-center">
-                Menjadi lembaga pendidikan Islam terkemuka yang mencetak
-                generasi muda berakhlak mulia, cerdas, dan berkontribusi positif
-                terhadap masyarakat.
+              <h3 class="card-title">
+                Pelantikan Pengurus Yayasan Darul Qur'an
+              </h3>
+              <p class="text-muted">Tanggal: 25 September 2024</p>
+              <p class="card-text">
+                Pada tanggal 25 September 2024, Yayasan Pesantren Darul Qur'an
+                mengadakan pelantikan pengurus baru. Kegiatan ini bertujuan
+                untuk mengukuhkan posisi pengurus yang baru dan meningkatkan
+                semangat serta kerja sama dalam mengembangkan yayasan.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-6 mb-4">
-          <div class="card bg-info-subtle bg-gradient d-flex flex-column h-100">
+        <div class="col-md-4 mb-4">
+          <div class="card hover-effect fade-in">
+            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
             <div class="card-body">
-              <h2 class="card-title text-center">
-                <i class="bi bi-list-ul" style="font-size: 2rem"></i>
-                Misi
-              </h2>
-              <ul class="card-text">
-                <li>
-                  Menyediakan pendidikan berkualitas yang mengintegrasikan ilmu
-                  agama dan pengetahuan umum.
-                </li>
-                <li>
-                  Mengembangkan karakter dan akhlak santri melalui pembelajaran
-                  yang berbasis nilai-nilai keagamaan.
-                </li>
-                <li>
-                  Mendorong santri untuk aktif dalam kegiatan sosial dan
-                  pengabdian masyarakat.
-                </li>
-                <li>
-                  Melaksanakan program pelatihan untuk meningkatkan kompetensi
-                  pengajar dan santri.
-                </li>
-                <li>
-                  Berkolaborasi dengan berbagai institusi untuk memperluas akses
-                  pendidikan dan meningkatkan kualitas pengajaran.
-                </li>
-              </ul>
+              <h3 class="card-title">
+                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
+                Ilir
+              </h3>
+              <p class="text-muted">Tanggal: 26 Februari 2024</p>
+              <p class="card-text">
+                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
+                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
+                meningkatkan kemampuan siswa dalam menghafal dan memahami
+                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
+                kebaikan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card hover-effect fade-in">
+            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
+            <div class="card-body">
+              <h3 class="card-title">
+                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
+                Ilir
+              </h3>
+              <p class="text-muted">Tanggal: 26 Februari 2024</p>
+              <p class="card-text">
+                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
+                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
+                meningkatkan kemampuan siswa dalam menghafal dan memahami
+                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
+                kebaikan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card hover-effect fade-in">
+            <img
+              src="berita/ziarah.jpg"
+              class="card-img-top"
+              alt="Kegiatan Ziarah"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Kegiatan Ziarah Tahun 2023</h3>
+              <p class="text-muted">Tanggal: 29 Oktober 2023</p>
+              <p class="card-text">
+                Yayasan Pesantren Darul Qur'an mengadakan kegiatan ziarah pada
+                tanggal 29 Oktober 2023. Kegiatan ini bertujuan untuk
+                meningkatkan kesadaran dan keimanan siswa terhadap agama Islam
+                serta untuk mempereratkan silaturahmi antar siswa dan guru.
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="text-center mt-4 p-3">
-        <p class="lead">
-          Dengan komitmen yang kuat, Pondok Pesantren Darul Quran berupaya
-          mewujudkan visi dan misi ini demi menciptakan lingkungan yang lebih
-          baik dan membangun masa depan yang cerah bagi generasi mendatang.
-        </p>
-      </div>
     </div>
+
     <br />
-    <!-- Include Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
 
     <!-- Footer -->
     <footer class="footer bg-success bg-gradient text-white py-4">

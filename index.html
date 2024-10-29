@@ -12,7 +12,16 @@
       name="description"
       content="Website resmi Yayasan Darul Quran, sebuah yayasan yang berfokus pada pendidikan Islam dan pengembangan masyarakat di Sumatera Selatan. Menyediakan informasi tentang pondok pesantren, pendidikan agama, dan kegiatan yayasan."
     />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" /
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    >
     <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
     <style>
       .selector-for-some-widget {
@@ -135,7 +144,7 @@
                 <a class="nav-link" href="#">Program Pendidikan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pendaftaran</a>
+                <a class="nav-link" href="Pendaftaran.html">Pendaftaran</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Kegiatan</a>
@@ -163,7 +172,9 @@
                   <li><a class="dropdown-item" href="#">Madrasah Aliyah</a></li>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="Berita.html">Berita</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Kontak</a>
               </li>
@@ -292,10 +303,14 @@
         transition: opacity 0.5s ease;
       }
     </style>
+    <!-- Logo Section -->
     <div
       class="container d-flex justify-content-center align-items-center py-4"
     >
-      <div class="d-flex flex-wrap justify-content-center gap-4">
+      <div
+        class="d-flex flex-wrap justify-content-center gap-4"
+        data-aos="fade-up"
+      >
         <img
           src="logo/tk.png"
           class="img-fluid"
@@ -324,17 +339,18 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="container hero-section my-5">
+    <div
+      class="container hero-section my-5"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <h1 class="text-center">
         Selamat Datang di Website Yayasan Pondok Pesantren Darul Qur'an
       </h1>
       <p class="text-center">
         Misi kami adalah menyediakan pendidikan yang berkualitas dan mendalam
         mengenai ajaran Al-Qur'an. Kami percaya bahwa pendidikan yang baik dapat
-        membentuk karakter dan membawa perubahan positif dalam masyarakat. Oleh
-        karena itu, kami berkomitmen untuk menyediakan lingkungan belajar yang
-        kondusif, guru-guru yang berpengalaman, dan kurikulum yang relevan
-        dengan kebutuhan zaman.
+        membentuk karakter dan membawa perubahan positif dalam masyarakat.
       </p>
       <p class="text-center">
         Bergabunglah dengan kami dalam perjalanan spiritual dan pendidikan yang
@@ -342,16 +358,17 @@
         mencapai tujuan yang lebih besar dan membawa manfaat bagi masyarakat.
       </p>
     </div>
-    <!-- berita -->
+
+    <!-- Berita Section -->
     <div class="container-fluid shadow rounded my-5 bg-light bg-gradient">
-      <h2 class="text-center mb-4 p-3">Berita Terbaru</h2>
+      <h2 class="text-center mb-4 p-3" data-aos="fade-up">Berita Terbaru</h2>
       <div class="row overflow-auto">
-        <!-- Tambahkan kelas overflow-auto untuk scroll -->
         <div class="d-flex flex-nowrap" style="overflow-x: auto; gap: 15px">
-          <!-- Menggunakan flex-nowrap untuk mencegah card bergerak ke bawah -->
-          <!-- Tambahkan d-flex untuk membuat card berjejer -->
-          <div class="col-md-4 col-12 flex-shrink-0 mb-4">
-            <!-- Tambahkan flex-shrink-0 untuk mencegah card menyusut -->
+          <div
+            class="col-md-4 col-12 flex-shrink-0 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div class="card hover-effect fade-in">
               <img
                 src="berita/pengurus.jpg"
@@ -365,16 +382,17 @@
                 <p class="text-muted">Tanggal: 25 September 2024</p>
                 <p class="card-text">
                   Pada tanggal 25 September 2024, Yayasan Pesantren Darul Qur'an
-                  mengadakan pelantikan pengurus baru. Kegiatan ini bertujuan
-                  untuk mengukuhkan posisi pengurus yang baru dan meningkatkan
-                  semangat serta kerja sama dalam mengembangkan yayasan.
+                  mengadakan pelantikan pengurus baru.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 col-12 flex-shrink-0 mb-4">
-            <!-- Tambahkan flex-shrink-0 untuk mencegah card menyusut -->
+          <div
+            class="col-md-4 col-12 flex-shrink-0 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <div class="card hover-effect fade-in">
               <img
                 src="berita/mtq.jpg"
@@ -389,17 +407,17 @@
                 <p class="text-muted">Tanggal: 26 Februari 2024</p>
                 <p class="card-text">
                   Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                  Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                  meningkatkan kemampuan siswa dalam menghafal dan memahami
-                  Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                  kebaikan.
+                  Tingkat Ogan Komering Ilir.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 col-12 flex-shrink-0 mb-4">
-            <!-- Tambahkan flex-shrink-0 untuk mencegah card menyusut -->
+          <div
+            class="col-md-4 col-12 flex-shrink-0 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div class="card hover-effect fade-in">
               <img
                 src="berita/ziarah.jpg"
@@ -411,9 +429,7 @@
                 <p class="text-muted">Tanggal: 29 Oktober 2023</p>
                 <p class="card-text">
                   Yayasan Pesantren Darul Qur'an mengadakan kegiatan ziarah pada
-                  tanggal 29 Oktober 2023. Kegiatan ini bertujuan untuk
-                  meningkatkan kesadaran dan keimanan siswa terhadap agama Islam
-                  serta untuk mempereratkan silaturahmi antar siswa dan guru.
+                  tanggal 29 Oktober 2023.
                 </p>
               </div>
             </div>
@@ -421,6 +437,7 @@
         </div>
       </div>
     </div>
+
     <!-- Footer -->
     <footer class="footer bg-success bg-gradient text-white py-4">
       <div class="container">
@@ -521,5 +538,9 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+      AOS.init(); // Inisialisasi AOS
+    </script>
   </body>
 </html>
