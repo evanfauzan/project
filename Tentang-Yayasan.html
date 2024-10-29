@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
     <style>
       .selector-for-some-widget {
@@ -166,13 +167,31 @@
       </div>
     </nav>
     <br /><br />
-    <div class="container-lg mt-5 bg-success-subtle bg-gradient rounded shadow">
-      <h1 class="text-center pt-3">Pondok Pesantren Darul Quran</h1>
+    <div
+      class="container-lg mt-5 bg-success-subtle bg-gradient rounded shadow"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <h1 class="text-center pt-3" data-aos="zoom-in" data-aos-duration="1000">
+        Pondok Pesantren Darul Quran
+      </h1>
 
-      <div class="mt-4 p-3 container-fluid">
+      <div
+        class="mt-4 p-3 container-fluid"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="bg-light bg-gradient rounded border p-3 h-100">
+          <div
+            class="col-md-6 mb-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <div
+              class="bg-light bg-gradient rounded border p-3 h-100"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h2>Profil Pondok Pesantren</h2>
               <p>
                 Pondok Pesantren Darul Quran adalah lembaga pendidikan Islam
@@ -195,7 +214,7 @@
                 Sebagai sekolah umum Islam yang berlandaskan pada nilai-nilai
                 Nahdlatul Ulama (NU), Pondok Pesantren ini memberikan
                 fleksibilitas bagi siswa untuk memilih antara menetap di pondok
-                (mondok) atau pulang pergi. Santri didorong untuk memahami dan
+                (mondok) atau pulang pergi. Santri didorung untuk memahami dan
                 mengamalkan ajaran Islam dengan cara yang relevan dalam konteks
                 sosial dan budaya mereka.
               </p>
@@ -209,8 +228,16 @@
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
-            <div class="bg-light bg-gradient rounded border p-3 h-100">
+          <div
+            class="col-md-6 mb-4"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div
+              class="bg-light bg-gradient rounded border p-3 h-100"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h2>Keunggulan Pondok</h2>
               <ul class="list-unstyled">
                 <li>
@@ -358,9 +385,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
 
-    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="js/libs/aos2.js"></script>
+    <script>
+      AOS.init(); // Inisialisasi AOS
+    </script>
   </body>
 </html>
