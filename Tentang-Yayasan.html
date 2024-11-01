@@ -57,9 +57,7 @@
   </head>
 
   <body style="background-image: url(background.png); overflow-x: hidden">
-    <nav
-      class="navbar navbar-expand-lg bg-success bg-gradient text-white fixed-top"
-    >
+    <nav class="navbar bg-success bg-gradient text-white fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand fs-3 text-white" href="">
           <img
@@ -73,150 +71,139 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Beranda</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="aboutDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Tentang Kami</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                <li>
-                  <a class="dropdown-item" href="Tentang-Yayasan.html"
-                    >Tentang Yayasan</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="Sejarah.html">Sejarah</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Pendiri Yayasan</a></li>
-                <li>
-                  <a class="dropdown-item" href="Visi-dan-Misi.html"
-                    >Visi & Misi</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Program Pendidikan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Pendaftaran.html">Pendaftaran</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Kegiatan</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="galleryDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Galeri</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">Pondok Pesantren</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Madrasah Ibtidaiyah</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Madrasah Tsanawiyah</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Madrasah Aliyah</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Berita.html">Berita</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Kontak</a>
-            </li>
-          </ul>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header bg-light bg-gradient">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body bg-light bg-gradient">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="aboutDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Tentang Kami</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <li>
+                    <a class="dropdown-item" href="Tentang-Yayasan.html"
+                      >Tentang Yayasan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Sejarah.html">Sejarah</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Pendiri Yayasan</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Visi-dan-Misi.html"
+                      >Visi & Misi</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Program Pendidikan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pendaftaran.html">Pendaftaran</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kegiatan</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="galleryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Galeri</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Pondok Pesantren</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Madrasah Ibtidaiyah</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Madrasah Tsanawiyah</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Madrasah Aliyah</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Berita.html">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
-
     <br /><br />
     <div
       class="container-fluid mt-5 bg-success-subtle bg-gradient rounded shadow"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
       <h1 class="text-center pt-3" data-aos="zoom-in" data-aos-duration="1000">
         Pondok Pesantren Darul Quran
       </h1>
 
-      <div
-        class="mt-4 p-3 container-fluid"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
+      <div class="mt-4 p-3">
         <div class="row">
           <div
             class="col-md-6 mb-4"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <div
-              class="bg-light bg-gradient rounded border p-3 h-100"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <h2>Profil Pondok Pesantren</h2>
-              <p>
-                Pondok Pesantren Darul Quran adalah lembaga pendidikan Islam
-                yang terletak di Desa Sumber Hidup, Dusun 2, Kecamatan Pedamaran
-                Timur, Kabupaten Ogan Ilir (OKI), Provinsi Sumatera Selatan.
-                Didirikan di atas tanah yang dulunya merupakan proyek UPT
-                Transmigrasi Pematang Panggang 5 SP 1 pada tahun 1983, pondok
-                ini memiliki sejarah panjang dan nilai budaya yang kaya,
-                mencerminkan tradisi dan kearifan lokal yang diintegrasikan
-                dengan ajaran Islam.
-              </p>
-              <p>
-                Dengan lokasi yang strategis dan dikelilingi oleh alam yang
-                subur, Pondok Pesantren Darul Quran menawarkan suasana tenang
-                yang ideal untuk belajar dan beribadah. Lingkungan yang asri dan
-                damai memberikan kesempatan bagi santri untuk fokus pada studi
-                keagamaan dan pengembangan pribadi mereka.
-              </p>
-              <p>
-                Sebagai sekolah umum Islam yang berlandaskan pada nilai-nilai
-                Nahdlatul Ulama (NU), Pondok Pesantren ini memberikan
-                fleksibilitas bagi siswa untuk memilih antara menetap di pondok
-                (mondok) atau pulang pergi. Santri didorung untuk memahami dan
-                mengamalkan ajaran Islam dengan cara yang relevan dalam konteks
-                sosial dan budaya mereka.
-              </p>
-              <p>
-                Pondok Pesantren Darul Quran mengutamakan pengajaran yang tidak
-                hanya berfokus pada aspek akademis, tetapi juga pada pembentukan
-                karakter dan akhlak santri. Melalui berbagai program, santri
-                diajarkan untuk menghargai nilai-nilai tradisional dan modern,
-                serta untuk berkontribusi secara positif kepada masyarakat.
-              </p>
+            <div class="card bg-light bg-gradient border-0 h-100">
+              <div class="card-body">
+                <h2 class="card-title">Profil Pondok Pesantren</h2>
+                <p class="card-text">
+                  Pondok Pesantren Darul Quran, terletak di Desa Sumber Hidup,
+                  didirikan pada tahun 1983. Dengan lokasi strategis dan alam
+                  subur, tempat ini ideal untuk belajar dan beribadah.
+                </p>
+                <p class="card-text">
+                  Sebagai sekolah Islam berlandaskan Nahdlatul Ulama (NU),
+                  santri memiliki pilihan untuk mondok atau pulang pergi. Fokus
+                  pada pengajaran akademis dan pembentukan karakter.
+                </p>
+                <p class="card-text">
+                  Program-program kami mengajarkan santri untuk menghargai nilai
+                  tradisional dan modern, serta berkontribusi positif kepada
+                  masyarakat.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -225,61 +212,56 @@
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <div
-              class="bg-light bg-gradient rounded border p-3 h-100"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <h2>Keunggulan Pondok</h2>
-              <ul class="list-unstyled">
-                <li>
-                  <strong>Program pendidikan yang komprehensif:</strong>
-                  Mengintegrasikan pembelajaran Al-Quran, fiqh, akidah, serta
-                  ilmu pengetahuan umum.
-                </li>
-                <li>
-                  <strong>Fasilitas yang memadai:</strong> Ruang kelas dan
-                  tempat ibadah yang kondusif untuk proses belajar.
-                </li>
-                <li>
-                  <strong>Pengajar berpengalaman:</strong> Komitmen tinggi
-                  terhadap pengembangan santri.
-                </li>
-                <li>
-                  <strong>Kegiatan ekstrakurikuler yang beragam:</strong>
-                  Termasuk olahraga, seni, dan sosial.
-                </li>
-                <li>
-                  <strong>LAB Komputer:</strong> Dilengkapi perangkat dan
-                  jaringan internet untuk akses sumber belajar tambahan.
-                </li>
-                <li>
-                  <strong>Program pengembangan diri:</strong> Pelatihan
-                  kepemimpinan dan bimbingan karier.
-                </li>
-                <li>
-                  <strong>Kemitraan dengan lembaga lain:</strong> Meningkatkan
-                  kualitas pendidikan dan peluang kolaborasi.
-                </li>
-                <li>
-                  <strong>Lingkungan belajar yang mendukung:</strong>
-                  Memprioritaskan nilai-nilai keagamaan dan sosial.
-                </li>
-                <li>
-                  <strong>Kegiatan masyarakat:</strong> Memperluas wawasan dan
-                  pengalaman santri.
-                </li>
-                <li>
-                  <strong>Komunikasi yang baik:</strong> Antara pengajar,
-                  santri, dan orang tua dalam proses pendidikan.
-                </li>
-              </ul>
+            <div class="card bg-light bg-gradient border-0 h-100">
+              <div class="card-body">
+                <h2 class="card-title">Keunggulan Pondok</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    <strong>Program pendidikan komprehensif:</strong> Integrasi
+                    Al-Quran, fiqh, akidah, dan ilmu umum.
+                  </li>
+                  <li>
+                    <strong>Fasilitas memadai:</strong> Ruang kelas dan tempat
+                    ibadah kondusif.
+                  </li>
+                  <li>
+                    <strong>Pengajar berpengalaman:</strong> Komitmen pada
+                    pengembangan santri.
+                  </li>
+                  <li>
+                    <strong>Kegiatan ekstrakurikuler:</strong> Olahraga, seni,
+                    dan sosial.
+                  </li>
+                  <li>
+                    <strong>LAB Komputer:</strong> Akses sumber belajar
+                    tambahan.
+                  </li>
+                  <li>
+                    <strong>Pengembangan diri:</strong> Pelatihan kepemimpinan.
+                  </li>
+                  <li>
+                    <strong>Kemitraan lembaga:</strong> Meningkatkan kualitas
+                    pendidikan.
+                  </li>
+                  <li>
+                    <strong>Lingkungan mendukung:</strong> Nilai keagamaan dan
+                    sosial.
+                  </li>
+                  <li>
+                    <strong>Kegiatan masyarakat:</strong> Memperluas wawasan
+                    santri.
+                  </li>
+                  <li>
+                    <strong>Komunikasi baik:</strong> Antara pengajar, santri,
+                    dan orang tua.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <br />
     <!-- Footer -->
     <footer class="footer bg-success bg-gradient text-white py-4">
