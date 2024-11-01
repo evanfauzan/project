@@ -57,7 +57,9 @@
   </head>
 
   <body style="background-image: url(background.png); overflow-x: hidden">
-    <nav class="navbar bg-success bg-gradient text-white fixed-top">
+    <nav
+      class="navbar navbar-expand-lg bg-success bg-gradient text-white fixed-top"
+    >
       <div class="container-fluid">
         <a class="navbar-brand fs-3 text-white" href="">
           <img
@@ -71,105 +73,91 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header bg-light bg-gradient">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body bg-light bg-gradient">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Beranda</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="aboutDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Tentang Kami</a
-                >
-                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                  <li>
-                    <a class="dropdown-item" href="Tentang-Yayasan.html"
-                      >Tentang Yayasan</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="Sejarah.html">Sejarah</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Pendiri Yayasan</a></li>
-                  <li>
-                    <a class="dropdown-item" href="Visi-dan-Misi.html"
-                      >Visi & Misi</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Program Pendidikan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Pendaftaran.html">Pendaftaran</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Kegiatan</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="galleryDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Galeri</a
-                >
-                <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Pondok Pesantren</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Madrasah Ibtidaiyah</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Madrasah Tsanawiyah</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Madrasah Aliyah</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Berita.html">Berita</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Kontak</a>
-              </li>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Tentang Kami</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="Tentang-Yayasan.html"
+                    >Tentang Yayasan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Sejarah.html">Sejarah</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Pendiri Yayasan</a></li>
+                <li>
+                  <a class="dropdown-item" href="Visi-dan-Misi.html"
+                    >Visi & Misi</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Program Pendidikan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pendaftaran.html">Pendaftaran</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kegiatan</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="galleryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Galeri</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Pondok Pesantren</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Madrasah Ibtidaiyah</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Madrasah Tsanawiyah</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Madrasah Aliyah</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontak</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+
     <br /><br />
     <div
       class="container-fluid mt-5 bg-success-subtle bg-gradient rounded shadow"
