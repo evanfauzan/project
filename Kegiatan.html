@@ -10,23 +10,25 @@
       .selector-for-some-widget {
         box-sizing: content-box;
       }
-      .card {
-        height: 100%; /* Make cards equal height */
+      .activity {
+        background: #d4edda;
+        border-radius: 8px;
+        padding: 30px;
+        margin-bottom: 30px;
+        color: #155724;
+        transition: transform 0.3s, box-shadow 0.3s;
       }
-      .card:hover {
-        transform: scale(1.02);
+      .activity:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
       }
-      .card img {
-        height: 200px; /* Set a fixed height for images */
-        object-fit: cover; /* Maintain aspect ratio */
-      }
-      .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Space out the content */
+      .activity img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
       }
     </style>
-    <title>Yayasan Darul Qur'an - Berita</title>
+    <title>Yayasan Darul Qur'an</title>
   </head>
 
   <body style="background-image: url(background.png)">
@@ -159,126 +161,169 @@
     </nav>
     <br /><br />
     <!-- content -->
-    <div
-      class="container my-5 bg-light bg-gradient shadow"
-      data-aos="zoom-out-down"
-      data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
-    >
-      <h2
-        class="text-center mb-4 pt-3"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        Berita Terbaru
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">
+        Kegiatan Yayasan Pondok Pesantren Darul Quran
       </h2>
-      <div
-        class="row p-2"
-        data-aos-duration="2000"
-        data-aos="zoom-in"
-        data-aos-easing="ease-in-out"
-      >
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <img
-              src="berita/pengurus.jpg"
-              class="card-img-top"
-              alt="Pelantikan Pengurus"
-            />
-            <div class="card-body">
-              <h3 class="card-title">
-                Pelantikan Pengurus Yayasan Darul Qur'an
-              </h3>
-              <p class="text-muted">Tanggal: 25 September 2024</p>
-              <p class="card-text">
-                Pada tanggal 25 September 2024, Yayasan Pesantren Darul Qur'an
-                mengadakan pelantikan pengurus baru. Kegiatan ini bertujuan
-                untuk mengukuhkan posisi pengurus yang baru dan meningkatkan
-                semangat serta kerja sama dalam mengembangkan yayasan.
-              </p>
-            </div>
-          </div>
+
+      <div class="row" id="activities">
+        <!-- Kegiatan 1: Upacara Pembukaan -->
+        <div class="col-md-12 activity" data-aos="fade-up">
+          <img src="images/1.jpg" alt="Upacara Pembukaan" />
+          <h3>Upacara Pembukaan Tahun Ajaran Baru</h3>
+          <p>
+            Kegiatan ini menandai awal tahun ajaran baru, dihadiri oleh seluruh
+            santri dan pengurus untuk memupuk semangat belajar...
+          </p>
         </div>
 
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
+        <!-- Kegiatan 2: Pemilihan Ketua OSIS -->
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/pemilihan_osis.jpg" alt="Pemilihan OSIS" />
+          <h3>Pemilihan Ketua OSIS</h3>
+          <p>
+            Proses demokrasi yang melibatkan santri dalam memilih pemimpin
+            organisasi siswa untuk periode selanjutnya...
+          </p>
         </div>
 
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <img
-              src="berita/ziarah.jpg"
-              class="card-img-top"
-              alt="Kegiatan Ziarah"
-            />
-            <div class="card-body">
-              <h3 class="card-title">Kegiatan Ziarah Tahun 2023</h3>
-              <p class="text-muted">Tanggal: 29 Oktober 2023</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an mengadakan kegiatan ziarah pada
-                tanggal 29 Oktober 2023. Kegiatan ini bertujuan untuk
-                meningkatkan kesadaran dan keimanan siswa terhadap agama Islam
-                serta untuk mempereratkan silaturahmi antar siswa dan guru.
-              </p>
-            </div>
-          </div>
+        <!-- Kegiatan 3: Shalat Dhuha -->
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/shalat_dhuha.jpg" alt="Shalat Dhuha" />
+          <h3>Shalat Dhuha</h3>
+          <p>
+            Kegiatan shalat sunah yang dilaksanakan setiap pagi untuk memohon
+            berkah dan kelancaran belajar...
+          </p>
+        </div>
+
+        <!-- Kegiatan 4: Kepramukaan -->
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/kepramukaan.jpg" alt="Kepramukaan" />
+          <h3>Kepramukaan</h3>
+          <p>
+            Pembinaan karakter dan keterampilan bagi santri melalui kegiatan
+            pramuka yang menyenangkan dan edukatif...
+          </p>
+        </div>
+
+        <!-- Kegiatan 5: Perkemahan Pramuka -->
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="400">
+          <img src="images/perkemahan_pramuka.jpg" alt="Perkemahan Pramuka" />
+          <h3>Perkemahan Pramuka</h3>
+          <p>
+            Kegiatan outdoor yang mengajarkan kemandirian dan kerjasama antar
+            santri dalam suasana alam...
+          </p>
+        </div>
+
+        <!-- Kegiatan 6: Rekreasi -->
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="500">
+          <img src="images/rekreasi.jpg" alt="Rekreasi" />
+          <h3>Rekreasi</h3>
+          <p>
+            Kegiatan santai yang dilakukan untuk refreshing santri agar tetap
+            semangat dalam belajar...
+          </p>
+        </div>
+
+        <!-- Kegiatan 7: Buka Puasa Bersama -->
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="600">
+          <img src="images/buka_puasa.jpg" alt="Buka Puasa" />
+          <h3>Buka Puasa Bersama</h3>
+          <p>
+            Momen berbagi kebahagiaan dan kehangatan dalam kebersamaan saat
+            bulan Ramadan...
+          </p>
+        </div>
+
+        <!-- Kegiatan 8: Muhadoroh (Pidato) -->
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="700">
+          <img src="images/muhadoroh.jpg" alt="Muhadoroh" />
+          <h3>Muhadoroh (Pidato)</h3>
+          <p>
+            Kegiatan berpidato untuk melatih keberanian dan kemampuan berbicara
+            di depan umum...
+          </p>
+        </div>
+
+        <!-- Kegiatan 9: Ekstrakulikuler -->
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="800">
+          <img src="images/ekstrakulikuler.jpg" alt="Ekstrakulikuler" />
+          <h3>Ekstrakulikuler</h3>
+          <p>
+            Berbagai kegiatan di luar jam pelajaran yang mendukung pengembangan
+            minat dan bakat santri...
+          </p>
+        </div>
+
+        <!-- Kegiatan 10: Haflah Akhir Sanah -->
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="900">
+          <img src="images/haflah_akhir_sanah.jpg" alt="Haflah Akhir Sanah" />
+          <h3>Haflah Akhir Sanah</h3>
+          <p>
+            Perayaan kelulusan dan pencapaian santri di akhir tahun ajaran...
+          </p>
+        </div>
+
+        <!-- Kegiatan Tambahan -->
+        <h2 class="text-center mt-5">Kegiatan Tambahan bagi yang Mondok</h2>
+
+        <div class="col-md-12 activity" data-aos="fade-up">
+          <img src="images/pelantikan_pengurus.jpg" alt="Pelantikan Pengurus" />
+          <h3>Pelantikan Pengurus</h3>
+          <p>
+            Pelantikan pengurus baru yang bertugas untuk memimpin dan
+            mengorganisir kegiatan santri...
+          </p>
+        </div>
+
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/muhadarah.jpg" alt="Muhadarah" />
+          <h3>Muhadarah</h3>
+          <p>
+            Diskusi dan kajian ilmiah yang diadakan secara rutin untuk
+            meningkatkan pengetahuan santri...
+          </p>
+        </div>
+
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/pembacaan_yasin.jpg" alt="Pembacaan Yasin" />
+          <h3>Pembacaan Yasin Malam Jumat</h3>
+          <p>
+            Kegiatan rutin pembacaan surat Yasin setiap malam Jumat untuk
+            memperkuat keimanan...
+          </p>
+        </div>
+
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/nadhoman.jpg" alt="Nadhoman" />
+          <h3>Nadhoman</h3>
+          <p>
+            Kegiatan rutin membaca kitab kuning dan diskusi di antara santri
+            untuk meningkatkan pemahaman...
+          </p>
+        </div>
+
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="400">
+          <img src="images/madrasah_diniyyah.jpg" alt="Madrasah Diniyyah" />
+          <h3>Madrasah Diniyyah</h3>
+          <p>
+            Pelajaran sore untuk memperdalam ilmu agama dan Al-Qur'an bagi
+            santri...
+          </p>
+        </div>
+
+        <div class="col-md-12 activity" data-aos="fade-up" data-aos-delay="500">
+          <img src="images/tahsin_bacaan.jpg" alt="Tahsin Bacaan" />
+          <h3>Tahsin Bacaan dengan Metode 'Yanbua'</h3>
+          <p>
+            Pelatihan bacaan Al-Qur'an dengan metode khusus untuk meningkatkan
+            kualitas bacaan santri...
+          </p>
         </div>
       </div>
     </div>
-
-    <br />
-
     <!-- Footer -->
     <footer class="footer bg-success bg-gradient text-white py-4">
       <div class="container">

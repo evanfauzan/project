@@ -10,23 +10,8 @@
       .selector-for-some-widget {
         box-sizing: content-box;
       }
-      .card {
-        height: 100%; /* Make cards equal height */
-      }
-      .card:hover {
-        transform: scale(1.02);
-      }
-      .card img {
-        height: 200px; /* Set a fixed height for images */
-        object-fit: cover; /* Maintain aspect ratio */
-      }
-      .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Space out the content */
-      }
     </style>
-    <title>Yayasan Darul Qur'an - Berita</title>
+    <title>Yayasan Darul Qur'an</title>
   </head>
 
   <body style="background-image: url(background.png)">
@@ -158,126 +143,28 @@
       </div>
     </nav>
     <br /><br />
-    <!-- content -->
-    <div
-      class="container my-5 bg-light bg-gradient shadow"
-      data-aos="zoom-out-down"
-      data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
-    >
-      <h2
-        class="text-center mb-4 pt-3"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        Berita Terbaru
-      </h2>
-      <div
-        class="row p-2"
-        data-aos-duration="2000"
-        data-aos="zoom-in"
-        data-aos-easing="ease-in-out"
-      >
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <img
-              src="berita/pengurus.jpg"
-              class="card-img-top"
-              alt="Pelantikan Pengurus"
-            />
-            <div class="card-body">
-              <h3 class="card-title">
-                Pelantikan Pengurus Yayasan Darul Qur'an
-              </h3>
-              <p class="text-muted">Tanggal: 25 September 2024</p>
-              <p class="card-text">
-                Pada tanggal 25 September 2024, Yayasan Pesantren Darul Qur'an
-                mengadakan pelantikan pengurus baru. Kegiatan ini bertujuan
-                untuk mengukuhkan posisi pengurus yang baru dan meningkatkan
-                semangat serta kerja sama dalam mengembangkan yayasan.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <img
-              src="berita/ziarah.jpg"
-              class="card-img-top"
-              alt="Kegiatan Ziarah"
-            />
-            <div class="card-body">
-              <h3 class="card-title">Kegiatan Ziarah Tahun 2023</h3>
-              <p class="text-muted">Tanggal: 29 Oktober 2023</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an mengadakan kegiatan ziarah pada
-                tanggal 29 Oktober 2023. Kegiatan ini bertujuan untuk
-                meningkatkan kesadaran dan keimanan siswa terhadap agama Islam
-                serta untuk mempereratkan silaturahmi antar siswa dan guru.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container-fluid mt-5 bg-light bg-gradient shadow">
+      <!-- ganti judulnya -->
+      <h1 class="text-center">Judul Artikel</h1>
+      <!-- ganti tanggal -->
+      <p class="text-muted">Tanggal: 01 November 2024</p>
+      <!-- ganti src gambar -->
+      <img
+        src="images/1.jpg"
+        alt="Gambar Artikel"
+        class="img-fluid mb-4"
+        style="max-width: 80%"
+      />
+      <!-- isi dengan gambar yang sesuai -->
+      <p>
+        Isi artikel dimulai di sini. Anda dapat menambahkan konten artikel Anda
+        sesuai dengan kebutuhan. Gunakan paragraf, gambar, atau elemen lain yang
+        diperlukan.
+      </p>
+      <!-- apabila ingin memnambahkan buat ( p ) yang baru -->
+      <p>...</p>
     </div>
-
-    <br />
+    <!-- ahir kode -->
 
     <!-- Footer -->
     <footer class="footer bg-success bg-gradient text-white py-4">

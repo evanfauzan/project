@@ -10,23 +10,38 @@
       .selector-for-some-widget {
         box-sizing: content-box;
       }
-      .card {
-        height: 100%; /* Make cards equal height */
+      .profile-container {
+        background-color: #f8f9fa;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        text-align: center;
+        margin-top: 30px;
       }
-      .card:hover {
-        transform: scale(1.02);
+      .profile-image {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 5px solid #28a745; /* Green border */
       }
-      .card img {
-        height: 200px; /* Set a fixed height for images */
-        object-fit: cover; /* Maintain aspect ratio */
+      .quote {
+        font-style: italic;
+        color: #6c757d;
+        margin-top: 20px;
       }
-      .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Space out the content */
+      .name {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #343a40;
+      }
+      .title {
+        font-size: 1.2rem;
+        color: #28a745;
+        margin-bottom: 20px;
       }
     </style>
-    <title>Yayasan Darul Qur'an - Berita</title>
+    <title>Yayasan Darul Qur'an</title>
   </head>
 
   <body style="background-image: url(background.png)">
@@ -159,125 +174,38 @@
     </nav>
     <br /><br />
     <!-- content -->
-    <div
-      class="container my-5 bg-light bg-gradient shadow"
-      data-aos="zoom-out-down"
-      data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
-    >
-      <h2
-        class="text-center mb-4 pt-3"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        Berita Terbaru
-      </h2>
-      <div
-        class="row p-2"
-        data-aos-duration="2000"
-        data-aos="zoom-in"
-        data-aos-easing="ease-in-out"
-      >
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <img
-              src="berita/pengurus.jpg"
-              class="card-img-top"
-              alt="Pelantikan Pengurus"
-            />
-            <div class="card-body">
-              <h3 class="card-title">
-                Pelantikan Pengurus Yayasan Darul Qur'an
-              </h3>
-              <p class="text-muted">Tanggal: 25 September 2024</p>
-              <p class="card-text">
-                Pada tanggal 25 September 2024, Yayasan Pesantren Darul Qur'an
-                mengadakan pelantikan pengurus baru. Kegiatan ini bertujuan
-                untuk mengukuhkan posisi pengurus yang baru dan meningkatkan
-                semangat serta kerja sama dalam mengembangkan yayasan.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <img
-              src="berita/ziarah.jpg"
-              class="card-img-top"
-              alt="Kegiatan Ziarah"
-            />
-            <div class="card-body">
-              <h3 class="card-title">Kegiatan Ziarah Tahun 2023</h3>
-              <p class="text-muted">Tanggal: 29 Oktober 2023</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an mengadakan kegiatan ziarah pada
-                tanggal 29 Oktober 2023. Kegiatan ini bertujuan untuk
-                meningkatkan kesadaran dan keimanan siswa terhadap agama Islam
-                serta untuk mempereratkan silaturahmi antar siswa dan guru.
-              </p>
-            </div>
-          </div>
-        </div>
+    <div class="container my-5" data-aos="fade-up" data-aos-duration="1000">
+      <div class="profile-container">
+        <img
+          src="abah.png"
+          alt="KH. Junaidi Rois"
+          class="img-fluid rounded"
+          style="max-width: 200px"
+        />
+        <h2 class="name">KH. Junaidi Rois</h2>
+        <p class="title">Pendiri Yayasan Pondok Pesantren Darul Quran</p>
+        <p>
+          KH. Junaidi Rois adalah sosok yang dihormati dan dicintai oleh banyak
+          orang. Beliau memiliki visi yang jelas untuk menyediakan pendidikan
+          Islam yang berkualitas dan mendalam, mengedepankan nilai-nilai
+          keagamaan yang kuat.
+        </p>
+        <p>
+          Dengan dedikasi dan komitmen yang tinggi, KH. Junaidi Rois berhasil
+          membangun Pondok Pesantren Darul Quran sebagai tempat yang tidak hanya
+          fokus pada ilmu pengetahuan, tetapi juga pembentukan karakter santri
+          yang baik.
+        </p>
+        <p>
+          Selama bertahun-tahun, beliau telah menjadi panutan dan mentor bagi
+          banyak generasi muda, mengajarkan pentingnya akhlak dan spiritualitas
+          dalam kehidupan sehari-hari.
+        </p>
+        <p class="quote">
+          "Pendidikan adalah kunci untuk membuka pintu masa depan."
+        </p>
       </div>
     </div>
-
-    <br />
 
     <!-- Footer -->
     <footer class="footer bg-success bg-gradient text-white py-4">

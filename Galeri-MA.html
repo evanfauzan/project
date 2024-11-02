@@ -7,26 +7,27 @@
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
     <style>
-      .selector-for-some-widget {
-        box-sizing: content-box;
+      .gallery-item {
+        width: 100%;
+        height: 200px; /* Set a fixed height for the images */
+        object-fit: cover; /* Ensures images cover the area without distortion */
+        border-radius: 5px; /* Optional: for rounded corners */
+        transition: transform 0.2s; /* Smooth scaling effect */
       }
-      .card {
-        height: 100%; /* Make cards equal height */
+      .gallery-item:hover {
+        transform: scale(1.05); /* Scale effect on hover */
       }
-      .card:hover {
-        transform: scale(1.02);
+      /* Custom styles for the modal */
+      .modal-lg {
+        max-width: 80%; /* Increase the modal size */
       }
-      .card img {
-        height: 200px; /* Set a fixed height for images */
-        object-fit: cover; /* Maintain aspect ratio */
-      }
-      .card-body {
+      .modal-body {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Space out the content */
+        justify-content: center;
+        align-items: center;
       }
     </style>
-    <title>Yayasan Darul Qur'an - Berita</title>
+    <title>Yayasan Darul Qur'an</title>
   </head>
 
   <body style="background-image: url(background.png)">
@@ -158,126 +159,51 @@
       </div>
     </nav>
     <br /><br />
-    <!-- content -->
-    <div
-      class="container my-5 bg-light bg-gradient shadow"
-      data-aos="zoom-out-down"
-      data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
-    >
-      <h2
-        class="text-center mb-4 pt-3"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        Berita Terbaru
-      </h2>
+    <main class="container my-4 bg-light bg-gradient shadow p-3">
+      <div class="text-center">
+        <h2 class="judul2">Galeri Pondok</h2>
+      </div>
+
+      <div class="row">
+        <script>
+          for (let i = 102; i >= 1; i--) {
+            document.write(`
+                        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="400">
+                            <div class="card border-0">
+                                <img src="MA/${i}.jpg" alt="Kegiatan ${i}" class="gallery-item img-fluid" onclick="openPopup('images/${i}.jpg')" />
+                            </div>
+                        </div>
+                    `);
+          }
+        </script>
+      </div>
+
+      <!-- Bootstrap Modal -->
       <div
-        class="row p-2"
-        data-aos-duration="2000"
-        data-aos="zoom-in"
-        data-aos-easing="ease-in-out"
+        class="modal fade"
+        id="imageModal"
+        tabindex="-1"
+        aria-labelledby="imageModalLabel"
+        aria-hidden="true"
       >
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <img
-              src="berita/pengurus.jpg"
-              class="card-img-top"
-              alt="Pelantikan Pengurus"
-            />
-            <div class="card-body">
-              <h3 class="card-title">
-                Pelantikan Pengurus Yayasan Darul Qur'an
-              </h3>
-              <p class="text-muted">Tanggal: 25 September 2024</p>
-              <p class="card-text">
-                Pada tanggal 25 September 2024, Yayasan Pesantren Darul Qur'an
-                mengadakan pelantikan pengurus baru. Kegiatan ini bertujuan
-                untuk mengukuhkan posisi pengurus yang baru dan meningkatkan
-                semangat serta kerja sama dalam mengembangkan yayasan.
-              </p>
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel">Gambar</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <img
-              src="berita/ziarah.jpg"
-              class="card-img-top"
-              alt="Kegiatan Ziarah"
-            />
-            <div class="card-body">
-              <h3 class="card-title">Kegiatan Ziarah Tahun 2023</h3>
-              <p class="text-muted">Tanggal: 29 Oktober 2023</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an mengadakan kegiatan ziarah pada
-                tanggal 29 Oktober 2023. Kegiatan ini bertujuan untuk
-                meningkatkan kesadaran dan keimanan siswa terhadap agama Islam
-                serta untuk mempereratkan silaturahmi antar siswa dan guru.
-              </p>
+            <div class="modal-body">
+              <img class="img-fluid" id="modalImage" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <br />
+    </main>
 
     <!-- Footer -->
     <footer class="footer bg-success bg-gradient text-white py-4">
@@ -323,12 +249,11 @@
               <a
                 href="https://www.facebook.com/mts.daarunnajaa?mibextid=ZbWKwL"
                 target="_blank"
-              >
-                <img src="facebook.png" alt="Facebook" class="social-icon" />
-              </a>
-              <a href="https://instagram.com" target="_blank">
-                <img src="instagram.png" alt="Instagram" class="social-icon" />
-              </a>
+                ><img src="facebook.png" alt="Facebook" class="social-icon"
+              /></a>
+              <a href="https://instagram.com" target="_blank"
+                ><img src="instagram.png" alt="Instagram" class="social-icon"
+              /></a>
             </div>
           </div>
         </div>
@@ -342,28 +267,23 @@
       .footer {
         background: linear-gradient(135deg, #28a745 0%, #218838 100%);
       }
-
       .footer-title {
         font-weight: bold;
         display: flex;
         align-items: center;
       }
-
       .footer-description,
       .footer-text {
         font-size: 0.9rem;
       }
-
       .social-icons {
         display: flex;
         gap: 10px;
       }
-
       .social-icon {
         width: 30px;
         height: 30px;
       }
-
       .footer-title i {
         color: #fff; /* Ensure icons are white for contrast */
       }
@@ -377,8 +297,17 @@
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/libs/aos2.js"></script>
+
     <script>
       AOS.init(); // Inisialisasi AOS
+      function openPopup(imageSrc) {
+        const modalImage = document.getElementById("modalImage");
+        modalImage.src = imageSrc;
+        const imageModal = new bootstrap.Modal(
+          document.getElementById("imageModal")
+        );
+        imageModal.show();
+      }
     </script>
   </body>
 </html>

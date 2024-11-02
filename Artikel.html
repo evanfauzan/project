@@ -10,23 +10,18 @@
       .selector-for-some-widget {
         box-sizing: content-box;
       }
+      .hover-effect:hover {
+        transform: scale(1.02);
+      }
       .card {
         height: 100%; /* Make cards equal height */
       }
-      .card:hover {
-        transform: scale(1.02);
-      }
       .card img {
-        height: 200px; /* Set a fixed height for images */
+        height: 100%; /* Set a fixed height for images */
         object-fit: cover; /* Maintain aspect ratio */
       }
-      .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Space out the content */
-      }
     </style>
-    <title>Yayasan Darul Qur'an - Berita</title>
+    <title>Yayasan Darul Qur'an</title>
   </head>
 
   <body style="background-image: url(background.png)">
@@ -158,127 +153,80 @@
       </div>
     </nav>
     <br /><br />
-    <!-- content -->
-    <div
-      class="container my-5 bg-light bg-gradient shadow"
-      data-aos="zoom-out-down"
-      data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
-    >
-      <h2
-        class="text-center mb-4 pt-3"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        Berita Terbaru
-      </h2>
-      <div
-        class="row p-2"
-        data-aos-duration="2000"
-        data-aos="zoom-in"
-        data-aos-easing="ease-in-out"
-      >
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
+    <div class="container mt-5">
+      <!-- Bagian Judul Artikel, silakan edit judul artikel di sini -->
+      <h1 class="text-center">Kumpulan Artikel</h1>
+      <!-- Tidak ada perubahan pada judul, pastikan untuk tidak mengubah nama class -->
+      <!-- Bagian Artikel, silakan tambahkan atau edit artikel di sini -->
+      <div class="row">
+        <!-- Bagian Artikel 1, silakan edit atau tambahkan artikel di sini -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card hover-effect shadow">
+            <!-- Bagian Gambar Artikel, silakan ganti gambar artikel di sini -->
             <img
-              src="berita/pengurus.jpg"
+              src="images/10.jpg"
+              alt="Thumbnail Artikel 1"
               class="card-img-top"
-              alt="Pelantikan Pengurus"
             />
             <div class="card-body">
-              <h3 class="card-title">
-                Pelantikan Pengurus Yayasan Darul Qur'an
-              </h3>
-              <p class="text-muted">Tanggal: 25 September 2024</p>
-              <p class="card-text">
-                Pada tanggal 25 September 2024, Yayasan Pesantren Darul Qur'an
-                mengadakan pelantikan pengurus baru. Kegiatan ini bertujuan
-                untuk mengukuhkan posisi pengurus yang baru dan meningkatkan
-                semangat serta kerja sama dalam mengembangkan yayasan.
-              </p>
+              <!-- Bagian Judul Artikel, silakan edit judul artikel di sini -->
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <!-- Bagian Deskripsi Artikel, silakan edit deskripsi artikel di sini -->
+              <p class="card-text">Deskripsi singkat artikel 1...</p>
+              <!-- Bagian Link Artikel, silakan edit link artikel di sini -->
+              <a href="Artikel-Kosong.html" class="btn btn-primary"
+                >Baca Selengkapnya</a
+              >
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <img src="berita/mtq.jpg" class="card-img-top" alt="Kegiatan MTQ" />
-            <div class="card-body">
-              <h3 class="card-title">
-                Keterlibatan dalam Lomba MTQ Tingkat Kabupaten Ogan Komering
-                Ilir
-              </h3>
-              <p class="text-muted">Tanggal: 26 Februari 2024</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an berpartisipasi dalam lomba MTQ
-                Tingkat Ogan Komering Ilir. Kegiatan ini bertujuan untuk
-                meningkatkan kemampuan siswa dalam menghafal dan memahami
-                Al-Qur'an serta untuk meningkatkan rasa berlomba-lomba dalam
-                kebaikan.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div
-            class="card hover-effect fade-in"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
+        <!-- Bagian Artikel 2, silakan edit atau tambahkan artikel di sini -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card hover-effect shadow">
+            <!-- Bagian Gambar Artikel, silakan ganti gambar artikel di sini -->
             <img
-              src="berita/ziarah.jpg"
+              src="images/15.jpg"
+              alt="Thumbnail Artikel 2"
               class="card-img-top"
-              alt="Kegiatan Ziarah"
             />
             <div class="card-body">
-              <h3 class="card-title">Kegiatan Ziarah Tahun 2023</h3>
-              <p class="text-muted">Tanggal: 29 Oktober 2023</p>
-              <p class="card-text">
-                Yayasan Pesantren Darul Qur'an mengadakan kegiatan ziarah pada
-                tanggal 29 Oktober 2023. Kegiatan ini bertujuan untuk
-                meningkatkan kesadaran dan keimanan siswa terhadap agama Islam
-                serta untuk mempereratkan silaturahmi antar siswa dan guru.
-              </p>
+              <!-- Bagian Judul Artikel, silakan edit judul artikel di sini -->
+              <h5 class="card-title">Judul Artikel 2</h5>
+              <!-- Bagian Deskripsi Artikel, silakan edit deskripsi artikel di sini -->
+              <p class="card-text">Deskripsi singkat artikel 2...</p>
+              <!-- Bagian Link Artikel, silakan edit link artikel di sini -->
+              <a href="artikel2.html" class="btn btn-primary"
+                >Baca Selengkapnya</a
+              >
             </div>
           </div>
         </div>
+        <!-- Bagian Artikel 3, silakan edit atau tambahkan artikel di sini -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card hover-effect shadow">
+            <!-- Bagian Gambar Artikel, silakan ganti gambar artikel di sini -->
+            <img
+              src="images/56.jpg"
+              alt="Thumbnail Artikel 3"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <!-- Bagian Judul Artikel, silakan edit judul artikel di sini -->
+              <h5 class="card-title">Judul Artikel 3</h5>
+              <!-- Bagian Deskripsi Artikel, silakan edit deskripsi artikel di sini -->
+              <p class="card-text">Deskripsi singkat artikel 3...</p>
+              <!-- Bagian Link Artikel, silakan edit link artikel di sini -->
+              <a href="artikel3.html" class="btn btn-primary"
+                >Baca Selengkapnya</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Tidak ada perubahan pada struktur artikel, pastikan untuk tidak mengubah nama class -->
       </div>
+      <!-- Bagian Artikel, silakan tambahkan artikel baru di sini -->
+      <!-- End of Selection
     </div>
-
-    <br />
-
     <!-- Footer -->
     <footer class="footer bg-success bg-gradient text-white py-4">
       <div class="container">
